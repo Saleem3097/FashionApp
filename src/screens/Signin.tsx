@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
+import WelcomeText from "../components/WeclcomeText";
 
 const Signin = () => {
   return (
     <View>
-      <Text>Signin</Text>
+      <WelcomeText />
     </View>
   );
 };

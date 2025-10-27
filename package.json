@@ -1,5 +1,5 @@
 {
-  "name": "uimastring",
+  "name": "fashionapp",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
@@ -16,7 +16,7 @@
     "react": "19.1.0",
     "react-native": "0.81.4",
     "react-native-size-matters": "^0.4.2",
-    "react-native-svg": "^15.14.0"
+    "react-native-svg": "15.12.1"
   },
   "devDependencies": {
     "@types/react": "~19.1.0",

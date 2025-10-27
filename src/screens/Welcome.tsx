@@ -1,14 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import IconHome from "../../assets/Icon";
 import { s, vs } from "react-native-size-matters";
+import Feather from "@expo/vector-icons/Feather";
 
 const Welcome = () => {
-  return (
-    <View style={styles.container}>
-      <IconHome />
-    </View>
-  );
+  return <View style={styles.container}></View>;
 };
 
 export default Welcome;
