@@ -1,7 +1,7 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
 import { s, vs } from "react-native-size-matters";
-import Icon from "../assets/Icon";
+import { Icon } from "../assets/Icon";
 
 const Welcome = () => {
   return (
