@@ -1,20 +1,22 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import React from "react";
+import React, { FC } from "react";
 import { s, vs } from "react-native-size-matters";
 
-const LoginButton = () => {
+interface TheButtonProps {
+  name: String;
+}
+const TheButton: FC<TheButtonProps> = ({ name }) => {
   return (
     <TouchableOpacity style={styles.container}>
-      <Text style={styles.LoginTxt}>Login</Text>
+      <Text style={styles.LoginTxt}>{name}</Text>
     </TouchableOpacity>
   );
 };
 
-export default LoginButton;
+export default TheButton;
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: vs(52),
     height: s(55),
     width: s(317),
     backgroundColor: "#F83758",

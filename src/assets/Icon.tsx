@@ -5,12 +5,8 @@ import Svg, {
   LinearGradient,
   Stop,
   SvgProps,
-  Rect,
-  Pattern,
-  Image,
-  Use,
 } from "react-native-svg";
-const IconHome = (props: SvgProps) => (
+const Icon = (props: SvgProps) => (
   <Svg width={275} height={100} viewBox="0 0 275 100" fill="none" {...props}>
     <Path
       d="M124.993 49.9986C124.993 36.7382 119.725 24.0208 110.349 14.6442C100.972 5.2677 88.255 1.7389e-06 74.9946 0C61.7342 -1.73889e-06 49.017 5.2677 39.6404 14.6442C30.2638 24.0208 24.9961 36.7382 24.9961 49.9986H40.6209C45.7984 49.9986 49.8363 45.6597 51.7327 40.8418C52.9778 37.6787 54.8672 34.7718 57.3173 32.3213C62.0056 27.6331 68.3644 24.9993 74.9946 24.9993C81.6248 24.9993 87.9836 27.6331 92.6719 32.3213C97.3602 37.0096 99.9938 43.3684 99.9938 49.9986H124.993Z"
@@ -59,28 +55,4 @@ const IconHome = (props: SvgProps) => (
   </Svg>
 );
 
-const GoogleIcon = (props: SvgProps) => (
-  <Svg width={54} height={54} viewBox="0 0 54 54" fill="none" {...props}>
-    <Rect x={0.5} y={0.5} width={53} height={53} rx={26.5} fill="#FCF3F6" />
-    <Rect x={0.5} y={0.5} width={53} height={53} rx={26.5} stroke="#F83758" />
-    <Rect x={15} y={15} width={24} height={24} fill="url(#pattern0_4_468)" />
-    <Defs>
-      <Pattern
-        id="pattern0_4_468"
-        patternContentUnits="objectBoundingBox"
-        width={1}
-        height={1}
-      >
-        <Use href="#image0_4_468" transform="scale(0.00195312)" />
-      </Pattern>
-      <Image
-        id="image0_4_468"
-        width={512}
-        height={512}
-        preserveAspectRatio="none"
-        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6..."
-      />
-    </Defs>
-  </Svg>
-);
-export default { IconHome, GoogleIcon };
+export default Icon;
