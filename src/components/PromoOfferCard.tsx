@@ -5,7 +5,7 @@ import { s } from "react-native-size-matters";
 const PromoOfferCard = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.promoMessage}>20% OFF DURING THE WEEKEND</Text>
+      <Text style={styles.promoMessage}>20% OFF DURING THE WEEKEND !</Text>
       <TouchableOpacity style={styles.promoButton}>
         <Text style={styles.promoButtonText}>Get now</Text>
       </TouchableOpacity>
