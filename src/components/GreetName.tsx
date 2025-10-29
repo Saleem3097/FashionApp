@@ -9,7 +9,7 @@ const GreetName = () => {
       <View style={styles.helloContainer}>
         <Text style={styles.helloText}>Hello Fola</Text>
         <MaterialIcons
-          style={{ position: "absolute", right: s(186), bottom: s(4) }}
+          style={{ position: "absolute", right: s(135), bottom: s(4) }}
           name="waving-hand"
           size={24}
           color="orange"
