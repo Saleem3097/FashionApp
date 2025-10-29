@@ -2,12 +2,33 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import { s } from "react-native-size-matters";
 
-const PromoOfferCard = () => {
+interface PromoOfferCardProps {
+  label: string;
+  bannerColor: string;
+  promoMessageColor: string;
+  buttonColor: string;
+  buttonText: string;
+}
+
+const PromoOfferCard: React.FC<PromoOfferCardProps> = ({
+  label,
+  bannerColor,
+  promoMessageColor,
+  buttonColor,
+  buttonText,
+}) => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.promoMessage}>20% OFF DURING THE WEEKEND !</Text>
-      <TouchableOpacity style={styles.promoButton}>
-        <Text style={styles.promoButtonText}>Get now</Text>
+    <View style={[styles.container, { backgroundColor: bannerColor }]}>
+      <Text style={[styles.promoMessage, { color: promoMessageColor }]}>
+        {label}
+      </Text>
+
+      <TouchableOpacity
+        style={[styles.promoButton, { backgroundColor: buttonColor }]}
+      >
+        <Text style={[styles.promoButtonText, { color: buttonText }]}>
+          Get now
+        </Text>
       </TouchableOpacity>
     </View>
   );
@@ -17,34 +38,27 @@ export default PromoOfferCard;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#F17547",
-    height: s(125),
-    width: s(260),
+    height: s(130),
+    width: s(240),
     marginTop: s(20),
     borderRadius: s(15),
+    paddingHorizontal: s(20),
+    paddingVertical: s(24),
+    marginRight: s(19),
   },
   promoMessage: {
-    height: s(40),
-    width: s(181),
     fontSize: s(18),
     fontWeight: "700",
-    color: "#FFFFFF",
-    top: s(24),
-    left: s(19),
+    marginBottom: s(16),
   },
   promoButton: {
     width: s(80),
     height: s(34.12),
     borderRadius: s(17.65),
-    backgroundColor: "#FFFFFF",
     justifyContent: "center",
-    alignContent: "center",
-    top: s(40),
-    left: s(19),
+    alignItems: "center",
   },
   promoButtonText: {
-    color: "#F17547",
-    textAlign: "center",
     fontWeight: "700",
   },
 });

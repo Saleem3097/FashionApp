@@ -1,17 +1,21 @@
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
 import React from "react";
 import MenuCard from "../components/MenuCard";
 import { s } from "react-native-size-matters";
 import GreetName from "../components/GreetName";
-import PromoOfferCard from "../components/PromoOfferCard";
+import PromoOfferList from "../components/PromoOfferList";
+import CategoryHeader from "../components/CategoryHeader";
+import BrandsList from "../components/BrandsList";
 
 const HomePage = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <MenuCard />
       <GreetName />
-      <PromoOfferCard />
-    </View>
+      <PromoOfferList />
+      <CategoryHeader />
+      <BrandsList />
+    </ScrollView>
   );
 };
 
