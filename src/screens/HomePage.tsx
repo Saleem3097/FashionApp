@@ -6,32 +6,35 @@ import GreetName from "../components/GreetName";
 import PromoOfferList from "../components/PromoOfferList";
 import CategoryHeader from "../components/CategoryHeader";
 import BrandsList from "../components/BrandsList";
-import ProductCard from "../components/ProductCard";
+import ProductCardList from "../components/ProductCardList";
 
 const HomePage = () => {
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
       <MenuCard />
-      <GreetName />
-      <PromoOfferList />
-      <CategoryHeader />
-      <BrandsList />
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-around",
-          marginTop: s(20),
-        }}
+      <ScrollView
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
       >
-        <ProductCard />
-        <ProductCard />
-      </View>
-    </ScrollView>
+        <GreetName />
+        <PromoOfferList />
+        <CategoryHeader />
+        <BrandsList />
+        <ProductCardList />
+      </ScrollView>
+    </View>
   );
 };
 
 export default HomePage;
 
 const styles = StyleSheet.create({
-  container: { marginTop: s(35), marginHorizontal: s(23) },
+  container: {
+    flex: 1,
+    marginTop: s(35),
+    marginHorizontal: s(23),
+  },
+  scrollContent: {
+    paddingBottom: s(60),
+  },
 });

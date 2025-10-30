@@ -45,9 +45,7 @@ const BrandsList = () => {
         <BrandCard
           label={item.label}
           icon={item.icon}
-          onPress={() =>
-            setIsSelected(selected === item.label ? "" : item.label)
-          }
+          onPress={() => setIsSelected(item.label)}
           isSelected={selected === item.label}
         />
       )}
