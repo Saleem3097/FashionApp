@@ -8,7 +8,11 @@ const brandData = [
   {
     label: "Watch",
     icon: (
-      <MaterialCommunityIcons name="watch-variant" size={24} color="black" />
+      <MaterialCommunityIcons
+        name="watch-variant"
+        size={24}
+        color="#00000066"
+      />
     ),
   },
   {

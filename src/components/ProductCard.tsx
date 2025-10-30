@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
     height: s(180),
     borderRadius: s(15),
     backgroundColor: "#F8F8F8",
+    margin: s(6),
   },
   offerHeartContainer: {
     flexDirection: "row",
